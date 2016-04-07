@@ -1,0 +1,86 @@
+doctype html
+html.no-js(lang='en')
+  head
+    meta(charset='utf-8')
+    // If you delete this meta tag World War Z will become a reality
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    // This meta tags improve SEO
+    meta(name='description', content='Freelance Front-End Developer with a good grasp of Back-End located in Mexico City')
+    meta(name='author', content='Jaime Madrigal Rios')
+    title Web Developer
+    // If you are using the CSS version, only link these 2 files, you may add app.css to use for your overrides if you like
+    // <link rel="stylesheet" href="css/normalize.css">
+    link(rel='icon', type='image/png', href='http://riosjaime.com/favicon.ico')
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.0/foundation.min.css")
+    link(rel='stylesheet', href='css/foundation-icons.css')
+    // My styles
+    link(rel='stylesheet', href='css/style.css')
+    // Here goes the php if statement
+    // Here ends the php if
+  body
+    // Navigation starts here
+    nav.title-bar(data-responsive-toggle='example-menu', data-hide-for='medium')
+      button.menu-icon(type='button', data-toggle='')
+      .title-bar-title Jaime Rios
+    nav#example-menu.top-bar
+      .top-bar-left
+        ul.dropdown.menu(data-dropdown-menu='')
+      .top-bar-right
+        ul.menu
+          li
+            a(href='#what') Services
+          li
+            a(href='#who') About
+          li
+            a#contact(data-open='contactmodal') Contact me
+    // Here starts the content
+    .hero.text-center
+      h1.hero-txt Jaime Rios
+      h2 Creative Front-End Developer
+      h3.help-text I turn black coffee and pizza into  engaging websites.
+      a.hero-link(href='#hello')
+        h4#see-more 
+          div#effects.first_effect 
+            i.fi-arrow-down
+    //Hero ends here
+    // Hello starts here
+    #hello.text-center.row
+      .large-12.columns
+        img.text-right#smile(src='img/profile2.jpg', alt='This is my profile picture')
+
+
+      .large-9.columns
+        h2.text-left#the-header Hello, I'm Jaime.
+        p.text-left
+          | I'm a qualified
+          span  Front End Developer, with a good grasp of Back End.<br><br>My work is focused in Human Centered Design. 
+        .large-12.columns
+          button#contact.button(href='#', data-open='contactmodal') Contact me
+          a(href='https://docs.google.com/document/d/1bKqVbohnl_aCA1EHmIoE0xgsX-679TPOSjP5Pi5irTo/edit?usp=sharing')
+          button#contact.button Check my resume 
+          
+    // This is the code for the modal
+    #contactmodal.reveal(data-reveal='')
+      h3
+        | Want to discuss your website plans? Have an offer I couldn't refuse? Just say it.
+      // Here starts the form
+      #contact.containter-fluid.portfolio.contact-background
+        form(method='post', action='contact-process.php')
+          .form-group
+            label.h4(for='name') Name
+            input#name.form-control(type='text', name='Name', placeholder='Enter name', required='')
+          .form-group
+            label.h4(for='email') Email
+            input#email.form-control(type='email', name='Email', placeholder='Enter email', required='')
+          .form-group
+            label.h4(for='message') Message
+            textarea#message.form-control.col-sm-12(rows='5', name='Message', placeholder='Enter your message', required='')
+          button#form-submit.large.button(type='submit') Submit
+      button.close-button(data-close='', aria-label='Close modal', type='button')
+        span(aria-hidden='true') ×
+    // Release the SCRIPTS!
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js")
+    script(src="https://cdn.jsdelivr.net/foundation/6.2.0/foundation.min.js")
+    script(src="js/app.js")
+
+    // This is the Google Analytics code

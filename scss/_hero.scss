@@ -1,0 +1,86 @@
+.hero {
+  height: $div-height;
+  background-color: $black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+  .hero-txt{
+    align-self: center;
+  }
+  .hero-link{
+    margin-bottom: 1em;
+    background-color: $black;
+    padding: .5em;
+    margin-top: 3em;
+
+    } //end .hero-link
+  .hero-link:hover {
+    i.fi-arrow-down{
+    color: $action-color;
+  }
+  }
+
+} // end .hero
+
+
+// .hero Animations
+
+// arrow movement
+.first_effect {
+   color: black;
+   font-size: 2em;
+   background-color: rgba(251, 251, 251, 0);
+   border-radius: 100%;
+   padding: 1em 0;
+   //width: 200px;
+   animation: move 2.5s ease infinite;
+
+
+ }
+
+ @keyframes move {
+   50% {
+      transform: translate(0px, 1em);
+   }
+ }
+ .fi-arrow-down {
+   color: #3c4347;
+ }
+
+// hover circles
+
+ /*
+ This is a second approach for hover circles, it will toggle between states with jQuery, similar to a responsive nav
+ */
+
+.second_effect {
+      padding: .8em;
+      border-radius: 100%;
+      box-shadow: 0 0 0 5px $black;
+    //  animation-play-state: running;
+      animation: circle 1.2s  ease;
+      }
+
+  @keyframes circle {
+   0% { box-shadow: 0 0 0 0px black; opacity:1;
+        padding: .1em;
+        background-color: black;
+     }
+  25% { box-shadow: 0 0 0 3px black; opacity:1;
+        padding: 1.2em;
+        background-color: black;
+   }
+  50% { box-shadow: 0 0 0 0px black; opacity:1;
+        padding: .1em;
+        background-color: black;
+   }
+  75% { box-shadow: 0 0 0 3px black; opacity:1;
+        padding: 1.2em;
+        background-color: black;
+   }
+  100% { box-shadow: 0 0 0 0px black; opacity:1;
+        padding: .1em;
+        background-color: black;
+  }
+  }

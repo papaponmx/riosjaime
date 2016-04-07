@@ -1,0 +1,12 @@
+//variables andd mixins are included here
+@import "variables";
+body {
+  overflow-x: hidden;
+}
+//hero cover
+@import "hero";
+//about me
+@import "hello";
+@import "animations";
+// what section
+//@import "what";
