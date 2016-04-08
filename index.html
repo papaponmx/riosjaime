@@ -13,8 +13,10 @@
     <link rel="icon" type="image/png" href="http://riosjaime.com/favicon.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.0/foundation.min.css">
     <link rel="stylesheet" href="css/foundation-icons.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <!-- My styles-->
     <link rel="stylesheet" href="css/style.css">
+    <script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
     <!-- Here goes the php if statement-->
     <!-- Here ends the php if-->
   </head>
@@ -48,14 +50,11 @@
     <!--Hero ends here-->
     <!-- Hello starts here-->
     <div id="hello" class="text-center row">
-      <div class="large-12 columns"><img id="smile" src="img/profile2.jpg" alt="This is my profile picture" class="text-right"></div>
-      <div class="large-9 columns">
-        <h2 id="the-header" class="text-left">Hello, I'm Jaime.</h2>
-        <p class="text-left">I'm a qualified<span> Front End Developer, with a good grasp of Back End.<br><br>My work is focused in Human Centered Design. </span></p>
-        <div class="large-12 columns">
-          <button id="contact" href="#" data-open="contactmodal" class="button">Contact me</button><a href="https://docs.google.com/document/d/1bKqVbohnl_aCA1EHmIoE0xgsX-679TPOSjP5Pi5irTo/edit?usp=sharing"></a>
-          <button id="contact" class="button">Check my resume </button>
-        </div>
+      <div class="large-12 columns"><img id="smile" src="img/profile2.jpg" alt="This is my profile picture" data-animation="fadeInUp" data-timeout="100" class="text-right revealOnScroll"></div>
+      <div data-animation="fadeInUp" data-timeout="600" class="large-9 columns revealOnScroll"> 
+        <h2 class="text-left">Hello, I'm Jaime.</h2>
+        <p class="text-left">I'm a qualified<span> Front End Developer, with a good grasp of Back End. My work is focused in Human Centered Design. </span></p>
+        <div data-animation="fadeInUp" data-timeout="600" class="large-12 columns text-left revealOnScroll"><a id="contact" href="https://docs.google.com/document/d/1bKqVbohnl_aCA1EHmIoE0xgsX-679TPOSjP5Pi5irTo/edit?usp=sharing" data-open="contactmodal" class="button">Contact me</a><a id="contact" class="button">Resume </a><a id="portfolio-btn" href" class="button">Works          </a></div>
       </div>
     </div>
     <!-- This is the code for the modal-->

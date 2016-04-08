@@ -2,12 +2,21 @@
   color: white;
   background: black;
   @include div-format(100vh);
-  button {
-    float:right;
-    margin: 0px 2em;
-  }
+  .button {
+    margin: 1em .5em;
+    width: 10em;
+    border-radius: 2px;
+    background-color: $black;
+    color: black;
 
+  }
+  #portfolio-btn {
+    background-color: tomato;
+  }
 }
+
+
+
 
 
 #smile {
@@ -70,7 +79,6 @@
     opacity: 1;
   }
 }
-
 .lightSpeedIn {
   -webkit-animation-name: lightSpeedIn;
   animation-name: lightSpeedIn;
