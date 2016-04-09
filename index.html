@@ -59,10 +59,30 @@
     </div>
     <!-- Here I start to WORK WORK WORK -->
     <div id="works" class="row">
-      <h2 id="works-title" class="small-12 colums text-center">Some recent work</h2>
-      <div id="first" class="medium-4 columns grid-element">Div 1  </div>
-      <div id="second" class="medium-4 columns grid-element">Div 2</div>
-      <div id="third" class="medium-4 columns grid-element">Div 3          </div>
+      <h2 id="works-title" class="small-12 colums text-center">Portfolio</h2><a data-open="modalOne">
+        <div id="first" data-animation="fadeInUp" data-timeout="600" class="medium-4 columns grid-element revealOnScroll"> 
+          <p>Div 1  </p>
+        </div></a><a data-open="modalTwo">     
+        <div id="second" data-animation="fadeInUp" data-timeout="600" class="medium-4 columns grid-element revealOnScroll"> 
+          <p>Div 2</p>
+        </div></a><a data-open="modalThree"> 
+        <div id="third" data-animation="fadeInUp" data-timeout="600" class="medium-4 columns grid-element revealOnScroll"> 
+          <p>Div 3</p>
+        </div></a>
+      <!--These are the modals for #works-->
+    </div>
+    <div id="modalOne" data-reveal="" class="reveal">
+      <h1>Seducción Delta</h1><img src="img/screen.png">
+      <p>I worked on this website at Seducción Delta where I developed the front-end with HTML5 and SCSS using a mobile first approach.</p><a class="text-center the-link">The link</a>
+      <button data-close aria-label="Close modal" type="button" class="close-button"><span aria-hidden="true">&times;</span></button>
+    </div>
+    <div id="modalTwo" data-reveal="" class="reveal">
+      <h1>Awesome, I gotcha</h1>
+      <button data-close aria-label="Close modal" type="button" class="close-button"><span aria-hidden="true">&times;</span></button>
+    </div>
+    <div id="modalThree" data-reveal="" class="reveal">
+      <h1>Awesome, I gotcha</h1>
+      <button data-close aria-label="Close modal" type="button" class="close-button"><span aria-hidden="true">&times;</span></button>
     </div>
     <!-- This is the code for the modal-->
     <div id="contactmodal" data-reveal="" class="reveal">

@@ -4,25 +4,37 @@
   padding: .8em;
   font-weight: bold;
 }
-
+}// End #works
 
 .grid-element {
   height: 50vh;
+  -webkit-transition: all 1s ease;
+   -moz-transition: all 1s ease;
+     -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+        transition: all 1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#first, #second, #third {
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-  &:nth-child(2) {
+  #first   {
     background-image: url('http://lorempixel.com/400/200/nightlife/');
-    background-color: tomato;
-    background-size: cover;
   }
-  &:nth-child(3) {
+  #second {
     background-image: url('http://lorempixel.com/400/200/people/');
-    background-color: green;
-    background-size: cover;
   }
-  &:nth-child(4) {
+  #third {
     background-image: url('http://lorempixel.com/400/200/business/');
-    background-color: white;
-    background-size: cover;
   }
-} //End .grid-element
-}// End #works
+
+
+.grid-element:hover {
+  cursor: pointer;
+  border: 3em solid rgba(255, 255, 255, 0);
+}

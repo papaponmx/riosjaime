@@ -62,10 +62,37 @@ html.no-js(lang='en')
           a.button#portfolio-btn(href="#works") Portfolio
     // Here I start to WORK WORK WORK 
     #works.row
-      h2.small-12.colums.text-center#works-title Some recent work
-      .medium-4.columns.grid-element#first Div 1  
-      .medium-4.columns.grid-element#second Div 2
-      .medium-4.columns.grid-element#third Div 3          
+      h2.small-12.colums.text-center#works-title Portfolio
+      a(data-open='modalOne')
+        .medium-4.columns.grid-element.revealOnScroll#first(data-animation="fadeInUp" data-timeout="600") 
+          p Div 1  
+      a(data-open='modalTwo')      
+        .medium-4.columns.grid-element.revealOnScroll#second(data-animation="fadeInUp" data-timeout="600") 
+          p Div 2
+      a(data-open='modalThree')  
+        .medium-4.columns.grid-element.revealOnScroll#third(data-animation="fadeInUp" data-timeout="600") 
+          p Div 3
+      //These are the modals for #works
+    .reveal#modalOne(data-reveal='')
+      h1 Seducción Delta
+      img(src="img/screen.png")
+      p I worked on this website at Seducción Delta where I developed the front-end with HTML5 and SCSS using a mobile first approach.
+      a.text-center.the-link The link
+      button.close-button(data-close aria-label="Close modal" type="button")
+        span(aria-hidden="true") &times;
+    .reveal#modalTwo(data-reveal='')
+      h1 Awesome, I gotcha
+      button.close-button(data-close aria-label="Close modal" type="button")
+        span(aria-hidden="true") &times;
+    .reveal#modalThree(data-reveal='')
+      h1 Awesome, I gotcha
+      button.close-button(data-close aria-label="Close modal" type="button")
+        span(aria-hidden="true") &times;
+
+
+
+
+                  
     // This is the code for the modal
     #contactmodal.reveal(data-reveal='')
       h3

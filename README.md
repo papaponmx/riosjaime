@@ -1,13 +1,17 @@
 # DONE
 
 Create the work grid
-
-
-# TO DO
 :hover styles for the grid
 Text styles for each .grid-element
 Create a modal for each element.
 
+# TO DO
+Improve the standard modal for each element
+Create a footer or social media section
+
+
+
+ FOR THE Portfolio
 
 # riosjaime.com
 
