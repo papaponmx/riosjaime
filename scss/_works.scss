@@ -1,0 +1,28 @@
+#works {
+  height: 80vh;
+#works-title {
+  padding: .8em;
+  font-weight: bold;
+}
+
+
+.grid-element {
+  height: 50vh;
+
+  &:nth-child(2) {
+    background-image: url('http://lorempixel.com/400/200/nightlife/');
+    background-color: tomato;
+    background-size: cover;
+  }
+  &:nth-child(3) {
+    background-image: url('http://lorempixel.com/400/200/people/');
+    background-color: green;
+    background-size: cover;
+  }
+  &:nth-child(4) {
+    background-image: url('http://lorempixel.com/400/200/business/');
+    background-color: white;
+    background-size: cover;
+  }
+} //End .grid-element
+}// End #works

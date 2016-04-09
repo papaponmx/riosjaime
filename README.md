@@ -1,3 +1,13 @@
+# DONE
+
+Create the work grid
+
+
+# TO DO
+:hover styles for the grid
+Text styles for each .grid-element
+Create a modal for each element.
+
 
 # riosjaime.com
 

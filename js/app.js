@@ -20,6 +20,16 @@ $(".hero-link").click(function() {
     $('#the-header').show( 3000 );
 });
 
+// For #portfolio-btn
+$("#portfolio-btn").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#works").offset().top
+    }, 2000);
+    $('#smile').show( 1000 );
+    $('#the-header').show( 3000 );
+    $('#the-header').show( 3000 );
+});
+
 
 
 $(function() {

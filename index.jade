@@ -57,9 +57,15 @@ html.no-js(lang='en')
           | I'm a qualified
           span  Front End Developer, with a good grasp of Back End. My work is focused in Human Centered Design. 
         .large-12.columns.text-left.revealOnScroll(data-animation="fadeInUp" data-timeout="600")
-          a#contact.button(href='https://docs.google.com/document/d/1bKqVbohnl_aCA1EHmIoE0xgsX-679TPOSjP5Pi5irTo/edit?usp=sharing' data-open='contactmodal') Contact me
-          a#contact.button Resume 
-          a.button#portfolio-btn(href"") Works          
+          a#contact.button( data-open='contactmodal') Contact me
+          a#resume.button(href='https://docs.google.com/document/d/1bKqVbohnl_aCA1EHmIoE0xgsX-679TPOSjP5Pi5irTo/edit?usp=sharing') Resume 
+          a.button#portfolio-btn(href="#works") Portfolio
+    // Here I start to WORK WORK WORK 
+    #works.row
+      h2.small-12.colums.text-center#works-title Some recent work
+      .medium-4.columns.grid-element#first Div 1  
+      .medium-4.columns.grid-element#second Div 2
+      .medium-4.columns.grid-element#third Div 3          
     // This is the code for the modal
     #contactmodal.reveal(data-reveal='')
       h3
