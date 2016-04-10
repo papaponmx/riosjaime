@@ -1,8 +1,5 @@
 # TO DO
 
-
-
-
 // Optimize everything
 Improve thumbnails
 Minify scripts and styles
@@ -14,14 +11,9 @@ Choose fonts
 # DONE
 
 Today
-Included Google Analytics code
+  Included Google Analytics code
 
-Create the work grid
-:hover styles for the grid
-Text styles for each .grid-element
-Create a modal for each element.
-
- Yesterday
+Yesterday
   Colors for the whole theme
   Improve the modal template for each element
   Improve :hover text of .grid-element
@@ -29,11 +21,17 @@ Create a modal for each element.
   Scroll to top button
   Deprecated bounce animation on .hero
   Scroll to top button animation
+
+Create the work grid
+:hover styles for the grid
+Text styles for each .grid-element
+Create a modal for each element.
+
 # riosjaime.com
 
 Version 2.0
 =======
-This will be the second iteration of my website, with a fresh design and more relevant information being displayed at the right time making it easier to the user to explore the site. This version is yet to be released.
+This will be the second iteration of my website, with a fresh design and more relevant information being displayed at the right time making it easier to the user to explore the site. This is live at http://riosjaime.com
 
 
 
