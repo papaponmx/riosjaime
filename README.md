@@ -1,3 +1,13 @@
+# TO DO
+
+// Optimize everything
+Improve thumbnails
+Minify scripts and styles
+Upload all in .gzip
+Optimize images
+Enhance #footer a:hover
+Choose fonts
+
 # DONE
 
 Create the work grid
@@ -5,14 +15,14 @@ Create the work grid
 Text styles for each .grid-element
 Create a modal for each element.
 
-# TO DO
-Improve the standard modal for each element
-Create a footer or social media section
-
-
-
- FOR THE Portfolio
-
+ Today
+  Colors for the whole theme
+  Improve the modal template for each element
+  Improve :hover text of .grid-element
+  Create a footer or social media section
+  Scroll to top button
+  Deprecated bounce animation on .hero
+  Scroll to top button animation
 # riosjaime.com
 
 Version 2.0

@@ -16,13 +16,12 @@
     <link rel="stylesheet" href="css/animate.min.css">
     <!-- My styles-->
     <link rel="stylesheet" href="css/style.css">
-    <script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
     <!-- Here goes the php if statement-->
     <!-- Here ends the php if-->
   </head>
   <body>
     <!-- Navigation starts here-->
-    <nav data-responsive-toggle="example-menu" data-hide-for="medium" class="title-bar">
+    <nav data-responsive-toggle="example-menu" data-hide-for="medium" data-sticky data-options="marginTop:0;" class="title-bar">
       <button type="button" data-toggle="" class="menu-icon"></button>
       <div class="title-bar-title">Jaime Rios</div>
     </nav>
@@ -52,39 +51,63 @@
     <div id="hello" class="text-center row">
       <div class="large-12 columns"><img id="smile" src="img/profile2.jpg" alt="This is my profile picture" data-animation="fadeInUp" data-timeout="100" class="text-right revealOnScroll"></div>
       <div data-animation="fadeInUp" data-timeout="600" class="large-9 columns revealOnScroll"> 
-        <h2 class="text-left">Hello, I'm Jaime.</h2>
+        <h2 class="text-left">Hello, I'm Jaime</h2>
         <p class="text-left">I'm a qualified<span> Front End Developer, with a good grasp of Back End. My work is focused in Human Centered Design. </span></p>
-        <div data-animation="fadeInUp" data-timeout="600" class="large-12 columns text-left revealOnScroll"><a id="contact" data-open="contactmodal" class="button">Contact me</a><a id="resume" href="https://docs.google.com/document/d/1bKqVbohnl_aCA1EHmIoE0xgsX-679TPOSjP5Pi5irTo/edit?usp=sharing" class="button">Resume </a><a id="portfolio-btn" href="#works" class="button">Portfolio</a></div>
+        <div data-animation="fadeInUp" data-timeout="600" class="large-12 columns text-left revealOnScroll"><a id="contact-btn" data-open="contactmodal" class="button">Contact me</a><a id="resume" href="https://docs.google.com/document/d/1bKqVbohnl_aCA1EHmIoE0xgsX-679TPOSjP5Pi5irTo/edit?usp=sharing" class="button">Resume </a><a id="portfolio-btn" href="#works" class="button">Portfolio</a></div>
       </div>
     </div>
     <!-- Here I start to WORK WORK WORK -->
     <div id="works" class="row">
-      <h2 id="works-title" class="small-12 colums text-center">Portfolio</h2><a data-open="modalOne">
-        <div id="first" data-animation="fadeInUp" data-timeout="600" class="medium-4 columns grid-element revealOnScroll"> 
-          <p>Div 1  </p>
+      <h2 id="works-title" data-animation="fadeInUp" data-timeout="600" class="small-12 colums text-center revealOnScroll">Portfolio</h2><a data-open="modalOne">
+        <div id="first" data-animation="fadeInUp" data-timeout="1000" class="medium-4 columns grid-element revealOnScroll"> 
+          <!--p Seducción Delta  -->
         </div></a><a data-open="modalTwo">     
-        <div id="second" data-animation="fadeInUp" data-timeout="600" class="medium-4 columns grid-element revealOnScroll"> 
-          <p>Div 2</p>
+        <div id="second" data-animation="fadeInUp" data-timeout="1000" class="medium-4 columns grid-element revealOnScroll"> 
+          <!--p WorPress Store-->
         </div></a><a data-open="modalThree"> 
-        <div id="third" data-animation="fadeInUp" data-timeout="600" class="medium-4 columns grid-element revealOnScroll"> 
-          <p>Div 3</p>
+        <div id="third" data-animation="fadeInUp" data-timeout="1000" class="medium-4 columns grid-element revealOnScroll"> 
+          <!--p Fonts-->
         </div></a>
       <!--These are the modals for #works-->
     </div>
     <div id="modalOne" data-reveal="" class="reveal">
       <h1>Seducción Delta</h1><img src="img/screen.png">
-      <p>I worked on this website at Seducción Delta where I developed the front-end with HTML5 and SCSS using a mobile first approach.</p><a class="text-center the-link">The link</a>
+      <p>I developed this website for Seducción Delta. The main goal was to create a full responsive website.</p>
+      <ul>Technologies:
+        <li>HTML5</li>
+        <li>CSS3 (Zurb Foundation)</li>
+        <li>Full Responsibe</li>
+      </ul><a href="http://seducciondelta.mx/" class="button text-center the-link">The link</a>
       <button data-close aria-label="Close modal" type="button" class="close-button"><span aria-hidden="true">&times;</span></button>
     </div>
     <div id="modalTwo" data-reveal="" class="reveal">
-      <h1>Awesome, I gotcha</h1>
+      <h1>A WordPress Blog</h1><img src="img/ipad.png" class="text-center">
+      <p><br>For this Project, I participated as a Full Stack Developer.<br><br> For the Front-End, the goal was to achieve a medieval look and feel with customized fonts, a fully responsive website and determine the relevance of the content<br><br> For the Back-End, I needed to create a cuztom theme for the site that allow a non-technical savy user to manage the content. </p>
+      <ul>Technologies:
+        <li>WordPress</li>
+        <li>Bootstrap</li>
+        <li>Php </li>
+      </ul>
+      <div class="callout secondary">
+        <p class="help-text">Please note that due to NDA, I'm only allowed to display a demo website with dummy content in my server unitl the first live version is released. </p>
+      </div><a href="http://daniel.riosjaime.com" class="button text-center the-link">The link</a>
       <button data-close aria-label="Close modal" type="button" class="close-button"><span aria-hidden="true">&times;</span></button>
     </div>
     <div id="modalThree" data-reveal="" class="reveal">
-      <h1>Awesome, I gotcha</h1>
+      <h1>Playground</h1><img id="fonts2" src="img/fonts2.png">
+      <p><br><br>This is an independant project used to exemplify with fonts combinations and animations in order to illustrate the different emotions they inspire.<br><br> Check the link for an amazing visual experience.
+        <ul>Technologies:
+          <li>CSS3 (SCSS)</li>
+        </ul>
+      </p><a href="http://playground.riosjaime.com/" class="button text-center the-link">The link</a>
       <button data-close aria-label="Close modal" type="button" class="close-button"><span aria-hidden="true">&times;</span></button>
     </div>
-    <!-- This is the code for the modal-->
+    <!-- This is the last section-->
+    <div id="footer">
+      <h4 class="row text-center">Check my social networks</h4>
+      <div class="text-center"> <a href="https://facebook.com/jaimemadrigalrios"><i class="fi-social-facebook"></i><a href="https://twitter.com/papaponmx"><i class="fi-social-twitter"></i></a><a href="https://github.com/papaponmx"><i class="fi-social-github"></i></a><a href="https://teamtreehouse.com/jaimemadrigalrios"><i class="fi-social-treehouse"></i></a></a></div>
+    </div>
+    <!-- This is the code for the contact modal-->
     <div id="contactmodal" data-reveal="" class="reveal">
       <h3>Want to discuss your website plans? Have an offer I couldn't refuse? Just say it.</h3>
       <!-- Here starts the form-->
@@ -108,6 +131,7 @@
       <button data-close="" aria-label="Close modal" type="button" class="close-button"><span aria-hidden="true">×</span></button>
     </div>
     <!-- Release the SCRIPTS!-->
+    <script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/foundation/6.2.0/foundation.min.js"></script>
     <script src="js/app.js"></script>

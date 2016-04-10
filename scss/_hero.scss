@@ -5,19 +5,30 @@
   flex-direction: column;
   justify-content: center;
   max-width: 100%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #0578a3);
+  //h1, h2 {
+    //  }
+  h1 {
+    color: $bold-orange;
+    text-shadow: 2px 2px $gray;
+  }
+  h2 {
+    color: $gray;
+  }
   .hero-txt{
     align-self: center;
+
   }
   .hero-link{
     margin-bottom: 1em;
-    background-color: $black;
+    background-color: $transparent;
     padding: .5em;
     margin-top: 3em;
 
     } //end .hero-link
   .hero-link:hover {
     i.fi-arrow-down{
-    color: $action-color;
+    color: $bold-orange;
   }
   }
 
@@ -30,7 +41,7 @@
 .first_effect {
    color: black;
    font-size: 2em;
-   background-color: rgba(251, 251, 251, 0);
+   background-color: $transparent;
    border-radius: 100%;
    padding: 1em 0;
    //width: 200px;
@@ -54,10 +65,10 @@
  This is a second approach for hover circles, it will toggle between states with jQuery, similar to a responsive nav
  */
 
-.second_effect {
+/*.second_effect {
       padding: .8em;
       border-radius: 100%;
-      box-shadow: 0 0 0 5px $black;
+      box-shadow: 0 0 0 5px $transparent;
     //  animation-play-state: running;
       animation: circle 1.2s  ease;
       }
@@ -65,22 +76,22 @@
   @keyframes circle {
    0% { box-shadow: 0 0 0 0px black; opacity:1;
         padding: .1em;
-        background-color: black;
+        background-color: lighten($sky-blue, 2%);
      }
-  25% { box-shadow: 0 0 0 3px black; opacity:1;
+  22% { box-shadow: 0 0 0 3px black; opacity:1;
         padding: 1.2em;
-        background-color: black;
+        background-color: lighten($sky-blue, 2%);
    }
   50% { box-shadow: 0 0 0 0px black; opacity:1;
         padding: .1em;
-        background-color: black;
+        background-color: lighten($sky-blue, 2%);
    }
-  75% { box-shadow: 0 0 0 3px black; opacity:1;
+  72% { box-shadow: 0 0 0 3px black; opacity:1;
         padding: 1.2em;
-        background-color: black;
+        background-color: lighten($sky-blue, 2%);
    }
-  100% { box-shadow: 0 0 0 0px black; opacity:1;
+  100% { box-shadow:inherit; 0 0 0 0px black; opacity:1;
         padding: .1em;
-        background-color: black;
+        background-color: lighten($sky-blue, 2%);
   }
-  }
+  }*/

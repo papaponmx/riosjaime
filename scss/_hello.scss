@@ -1,28 +1,50 @@
 #hello {
   color: white;
-  background: black;
+  background: $sky-blue;
+  h2 {
+    text-shadow: 2px 2px $gray;
+  }
   @include div-format(100vh);
   .button {
     margin: 1em .5em;
     width: 10em;
     border-radius: 2px;
     background-color: $black;
-    color: black;
+    color: $sky-blue;
+    text-shadow: .2px .2px #343638;
+    box-shadow: 1.5px 1.5px $gray;
+    //letter-spacing: .6px;
+  }
+  .button:hover, .button:focus {
+    font-weight: bold;
+    background-color: darken($black, 20%);
+    box-shadow: 3px 3px $gray;
+  }
+  p {
+    font-size: 1.2em;
+  }
 
-  }
-  #portfolio-btn {
-    background-color: tomato;
-  }
+
+  /*#portfolio-btn {
+  font-weight: bold;
+  //  background-color: $sky-blue;
+  } */
+
+} // end #hello
+
+
+#contact-btn {
+  font-weight: bold;
 }
-
 
 
 
 
 #smile {
   border-radius: 100%;
-  width: 9em;
+  width: 12em;
   margin-bottom: 2em;
+  box-shadow: 0px 3px $black;
 //  display: none; This is for the jQuery animation
 }
 

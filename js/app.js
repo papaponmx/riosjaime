@@ -1,6 +1,6 @@
 $(document).foundation();
 
-$(document).ready( function() {
+$(window).load( function() {
   $('.hero').animate();
 
 });
@@ -74,4 +74,30 @@ $(function() {
   }
 
   revealOnScroll();
+});
+
+
+// Scroll to top button
+
+// adding the html
+$('body').prepend('<a href="#" class="back-to-top" id="the-arrow"><p<i class="fi-arrow-up"></i></p></a>');
+
+//The rest
+var amountScrolled = 300;
+
+$(window).scroll(function() {
+	if ( $(window).scrollTop() > amountScrolled ) {
+		$('a.back-to-top').fadeIn('slow');
+	} else {
+		$('a.back-to-top').fadeOut('slow');
+	}
+});
+
+
+//animation for button scrolling
+
+$(".back-to-top").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".hero").offset().top
+    }, 1000);
 });

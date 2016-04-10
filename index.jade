@@ -16,12 +16,12 @@ html.no-js(lang='en')
     link(rel='stylesheet', href='css/animate.min.css')
     // My styles
     link(rel='stylesheet', href='css/style.css')
-    script(src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js")
+
     // Here goes the php if statement
     // Here ends the php if
   body
     // Navigation starts here
-    nav.title-bar(data-responsive-toggle='example-menu', data-hide-for='medium')
+    nav.title-bar(data-responsive-toggle='example-menu', data-hide-for='medium' data-sticky data-options="marginTop:0;")
       button.menu-icon(type='button', data-toggle='')
       .title-bar-title Jaime Rios
     nav#example-menu.top-bar
@@ -52,48 +52,78 @@ html.no-js(lang='en')
 
 
       .large-9.columns.revealOnScroll(data-animation="fadeInUp" data-timeout="600") 
-        h2.text-left Hello, I'm Jaime.
+        h2.text-left Hello, I'm Jaime
         p.text-left
           | I'm a qualified
           span  Front End Developer, with a good grasp of Back End. My work is focused in Human Centered Design. 
         .large-12.columns.text-left.revealOnScroll(data-animation="fadeInUp" data-timeout="600")
-          a#contact.button( data-open='contactmodal') Contact me
+          a#contact-btn.button( data-open='contactmodal') Contact me
           a#resume.button(href='https://docs.google.com/document/d/1bKqVbohnl_aCA1EHmIoE0xgsX-679TPOSjP5Pi5irTo/edit?usp=sharing') Resume 
           a.button#portfolio-btn(href="#works") Portfolio
     // Here I start to WORK WORK WORK 
     #works.row
-      h2.small-12.colums.text-center#works-title Portfolio
+      h2.small-12.colums.text-center.revealOnScroll#works-title(data-animation="fadeInUp" data-timeout="600") Portfolio
       a(data-open='modalOne')
-        .medium-4.columns.grid-element.revealOnScroll#first(data-animation="fadeInUp" data-timeout="600") 
-          p Div 1  
+        .medium-4.columns.grid-element.revealOnScroll#first(data-animation="fadeInUp" data-timeout="1000") 
+          //p Seducción Delta  
       a(data-open='modalTwo')      
-        .medium-4.columns.grid-element.revealOnScroll#second(data-animation="fadeInUp" data-timeout="600") 
-          p Div 2
+        .medium-4.columns.grid-element.revealOnScroll#second(data-animation="fadeInUp" data-timeout="1000") 
+          //p WorPress Store
       a(data-open='modalThree')  
-        .medium-4.columns.grid-element.revealOnScroll#third(data-animation="fadeInUp" data-timeout="600") 
-          p Div 3
+        .medium-4.columns.grid-element.revealOnScroll#third(data-animation="fadeInUp" data-timeout="1000") 
+          //p Fonts
       //These are the modals for #works
     .reveal#modalOne(data-reveal='')
       h1 Seducción Delta
       img(src="img/screen.png")
-      p I worked on this website at Seducción Delta where I developed the front-end with HTML5 and SCSS using a mobile first approach.
-      a.text-center.the-link The link
+      p I developed this website for Seducción Delta. The main goal was to create a full responsive website.
+      ul Technologies:
+        li HTML5
+        li CSS3 (Zurb Foundation)
+        li Full Responsibe
+      
+      a(href="http://seducciondelta.mx/").button.text-center.the-link The link
       button.close-button(data-close aria-label="Close modal" type="button")
         span(aria-hidden="true") &times;
     .reveal#modalTwo(data-reveal='')
-      h1 Awesome, I gotcha
+      h1 A WordPress Blog
+      img.text-center(src="img/ipad.png")
+      p <br>For this Project, I participated as a Full Stack Developer.<br><br> For the Front-End, the goal was to achieve a medieval look and feel with customized fonts, a fully responsive website and determine the relevance of the content<br><br> For the Back-End, I needed to create a cuztom theme for the site that allow a non-technical savy user to manage the content. 
+      ul Technologies:
+        li WordPress
+        li Bootstrap
+        li Php 
+      .callout.secondary
+        p.help-text Please note that due to NDA, I'm only allowed to display a demo website with dummy content in my server unitl the first live version is released. 
+      a(href="http://daniel.riosjaime.com").button.text-center.the-link The link
       button.close-button(data-close aria-label="Close modal" type="button")
         span(aria-hidden="true") &times;
     .reveal#modalThree(data-reveal='')
-      h1 Awesome, I gotcha
+      h1 Playground
+      img#fonts2(src="img/fonts2.png")
+      p <br><br>This is an independant project used to exemplify with fonts combinations and animations in order to illustrate the different emotions they inspire.<br><br> Check the link for an amazing visual experience.
+        ul Technologies:
+          li CSS3 (SCSS)
+      a(href="http://playground.riosjaime.com/").button.text-center.the-link The link
       button.close-button(data-close aria-label="Close modal" type="button")
         span(aria-hidden="true") &times;
 
-
-
+    // This is the last section
+    
+    #footer
+      h4.row.text-center Check my social networks
+      div.text-center 
+        a(href='https://facebook.com/jaimemadrigalrios')
+          i.fi-social-facebook
+          a(href='https://twitter.com/papaponmx')
+            i.fi-social-twitter
+          a(href='https://github.com/papaponmx')
+            i.fi-social-github
+          a(href='https://teamtreehouse.com/jaimemadrigalrios')
+            i.fi-social-treehouse
 
                   
-    // This is the code for the modal
+    // This is the code for the contact modal
     #contactmodal.reveal(data-reveal='')
       h3
         | Want to discuss your website plans? Have an offer I couldn't refuse? Just say it.
@@ -113,6 +143,7 @@ html.no-js(lang='en')
       button.close-button(data-close='', aria-label='Close modal', type='button')
         span(aria-hidden='true') ×
     // Release the SCRIPTS!
+    script(src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js")
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js")
     script(src="https://cdn.jsdelivr.net/foundation/6.2.0/foundation.min.js")
     script(src="js/app.js")

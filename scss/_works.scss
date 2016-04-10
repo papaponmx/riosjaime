@@ -1,9 +1,13 @@
 #works {
   height: 80vh;
-#works-title {
-  padding: .8em;
-  font-weight: bold;
-}
+  color: lighten($sky-blue, 5%);
+;
+
+  #works-title {
+    padding: .8em;
+    font-weight: bold;
+    text-shadow: 1px 1px lighten($gray, 20%);
+  }
 }// End #works
 
 .grid-element {
@@ -14,27 +18,71 @@
     -ms-transition: all 1s ease;
         transition: all 1s ease;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
-}
+
+  p {
+    font-size: 2em;
+    color: white;
+    text-shadow: 2px 2px #000;
+  }
+} //end .grid-element
 #first, #second, #third {
   background-color: black;
   background-size: cover;
   background-repeat: no-repeat;
+    background-position: top;
 }
 
   #first   {
-    background-image: url('http://lorempixel.com/400/200/nightlife/');
+    background-image: url('/img/delta.png');
+
   }
   #second {
-    background-image: url('http://lorempixel.com/400/200/people/');
+    background-image: url('/img/Selection_058.png');
   }
   #third {
-    background-image: url('http://lorempixel.com/400/200/business/');
+    background-image: url('/img/fonts.png');
   }
 
 
-.grid-element:hover {
+.grid-element:hover, .grid-element:focus {
   cursor: pointer;
   border: 3em solid rgba(255, 255, 255, 0);
+  p {
+    font-size: 3em;
+  }
+}
+
+
+//Modals
+
+.reveal {
+  h1 {
+    color: $sky-blue;
+  }
+
+
+ ul li {
+    margin-left: 2em;
+ }
+}
+
+.the-link {
+  background-color: $sky-blue;
+  margin-left: 3em;
+  border-radius: .2em;
+  box-shadow: 2px 2px $gray;
+}
+.the-link:hover, .the-link:focus {
+  background-color: $gray;
+}
+
+#fonts2 {
+  border-radius: .3em;
+  border-width: thick;
+  border-color: black;
+  border-style: solid;
+  box-shadow: 2px 2px $old-paper;
+
 }

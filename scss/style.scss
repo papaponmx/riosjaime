@@ -4,10 +4,10 @@ body {
   overflow-x: hidden;
 }
 //hero cover
+@import "nav";
 @import "hero";
-//about me
+@import "scroll";
 @import "hello";
 @import "animations";
 @import "works";
-// what section
-//@import "what";
+@import "footer";
