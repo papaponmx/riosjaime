@@ -1,5 +1,8 @@
 # TO DO
 
+
+
+
 // Optimize everything
 Improve thumbnails
 Minify scripts and styles
@@ -10,12 +13,15 @@ Choose fonts
 
 # DONE
 
+Today
+Included Google Analytics code
+
 Create the work grid
 :hover styles for the grid
 Text styles for each .grid-element
 Create a modal for each element.
 
- Today
+ Yesterday
   Colors for the whole theme
   Improve the modal template for each element
   Improve :hover text of .grid-element
