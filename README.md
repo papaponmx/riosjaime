@@ -1,3 +1,6 @@
+
+
+
 # TO DO
 
 // Optimize everything
@@ -30,7 +33,7 @@ Create a modal for each element.
 
 Version 2.0
 =======
-This will be the second iteration of my website, with a fresh design and more relevant information being displayed at the right time making it easier to the user to explore the site. This version is yet to be released.
+This will be the second iteration of my website, with a fresh design and more relevant information being displayed at the right time making it easier to the user to explore the site. This is live at http://riosjaime.com 
 
 
 
