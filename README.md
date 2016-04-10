@@ -9,13 +9,10 @@ Enhance #footer a:hover
 Choose fonts
 
 # DONE
-
-Create the work grid
-:hover styles for the grid
-Text styles for each .grid-element
-Create a modal for each element.
-
  Today
+
+
+ Yesterday
   Colors for the whole theme
   Improve the modal template for each element
   Improve :hover text of .grid-element
@@ -23,6 +20,12 @@ Create a modal for each element.
   Scroll to top button
   Deprecated bounce animation on .hero
   Scroll to top button animation
+
+Create the work grid
+:hover styles for the grid
+Text styles for each .grid-element
+Create a modal for each element.
+  
 # riosjaime.com
 
 Version 2.0
