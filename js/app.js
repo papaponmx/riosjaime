@@ -11,7 +11,7 @@ $( "#see-more" ).mouseenter(
 
 //scroll to animation
 
-$(".hero-link").click(function() {
+$(".hero-link, #nav-btn-hello").click(function() {
     $('html, body').animate({
         scrollTop: $("#hello").offset().top
     }, 2000);
@@ -21,6 +21,14 @@ $(".hero-link").click(function() {
 });
 
 // For #portfolio-btn
+$("#portfolio-btn, #nav-btn-works").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#works").offset().top
+    }, 2000);
+    $('#smile').show( 1000 );
+    $('#the-header').show( 3000 );
+    $('#the-header').show( 3000 );
+});
 $("#portfolio-btn").click(function() {
     $('html, body').animate({
         scrollTop: $("#works").offset().top
@@ -29,6 +37,7 @@ $("#portfolio-btn").click(function() {
     $('#the-header').show( 3000 );
     $('#the-header').show( 3000 );
 });
+
 
 
 

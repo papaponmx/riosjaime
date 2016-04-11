@@ -1,5 +1,7 @@
 # TO DO
 
+.reveal links, invert their :hover colors.
+
 // Optimize everything
 Improve thumbnails
 Minify scripts and styles
