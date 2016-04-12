@@ -9,6 +9,7 @@ Upload all in .gzip
 Optimize images
 Enhance #footer a:hover
 Choose fonts
+Colors for the responsive navigation
 
 # DONE
 
