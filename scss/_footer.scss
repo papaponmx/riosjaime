@@ -1,14 +1,25 @@
 #footer {
  background-color: white;
  color: $sky-blue;
+ margin-padding: 2em;
   h4 {
     font-size: 1em;
     padding-top: 1em;
-    color: inherit;
+    font-weight: bold;
+
   }
   div a i {
     font-size: 2em;
     padding: .5em;
-    color: inherit;
+    color: $sky-blue;
   }
+
+  div a i:hover, div a i:focus  {
+    font-size: 2em;
+    padding: .5em;
+    color: $bold-orange;
+  }
+
+
+
 }

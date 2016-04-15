@@ -1,22 +1,33 @@
 # TO DO
 
-.reveal links, invert their :hover colors.
+
+
+
 
 // Optimize everything
 Improve thumbnails
 Minify scripts and styles
 Upload all in .gzip
 Optimize images
-Enhance #footer a:hover
 Choose fonts
-Colors for the responsive navigation
 
 # DONE
 
 Today
-  Included Google Analytics code
+ Removed animate.css for performance improvement
+ Fixed text-shadow on .hero
+ colors for the responsive menu
+ .reveal links, invert their :hover colors.
+ Removed gutter and improved function in app.js
+ Enhance #footer a:hover
+ Colors for the responsive navigation
+ Linked to app.min.js
 
-Yesterday
+ Before today
+
+
+
+  Included Google Analytics code
   Colors for the whole theme
   Improve the modal template for each element
   Improve :hover text of .grid-element

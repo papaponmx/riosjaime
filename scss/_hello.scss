@@ -9,15 +9,18 @@
     margin: 1em .5em;
     width: 10em;
     border-radius: 2px;
-    background-color: $black;
-    color: $sky-blue;
+    background-color: white; //darken($black, 20%);
+
+    //font-weight: bold;
+    color: darken($black, 40%);//white;
     text-shadow: .2px .2px #343638;
     box-shadow: 1.5px 1.5px $gray;
     //letter-spacing: .6px;
   }
   .button:hover, .button:focus {
     font-weight: bold;
-    background-color: darken($black, 20%);
+    background-color: $black;
+    color: $sky-blue;
     box-shadow: 3px 3px $gray;
   }
   p {

@@ -5,3 +5,11 @@
     font-weight: bold;
   }
 }
+.title-bar{
+  background-color: $transparent;
+  color: $bold-orange;
+}
+.menu-icon:after {
+  background-color: $bold-orange;
+  box-shadow:  0 7px 0 $bold-orange,0 14px 0 $bold-orange;
+}

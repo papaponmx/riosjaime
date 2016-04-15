@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" href="http://riosjaime.com/favicon.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.0/foundation.min.css">
     <link rel="stylesheet" href="css/foundation-icons.css">
-    <link rel="stylesheet" href="css/animate.min.css">
+    <!--link(rel='stylesheet', href='css/animate.min.css')-->
     <!-- My styles-->
     <link rel="stylesheet" href="css/style.css">
     <script>
@@ -25,7 +25,7 @@
   </head>
   <body>
     <!-- Navigation starts here-->
-    <nav data-responsive-toggle="example-menu" data-hide-for="medium" data-sticky data-options="marginTop:0;" class="title-bar">
+    <nav id="the-tittle-bar" data-responsive-toggle="example-menu" data-hide-for="medium" data-sticky data-options="marginTop:0;" class="title-bar">
       <button type="button" data-toggle="" class="menu-icon"></button>
       <div class="title-bar-title">Jaime Rios</div>
     </nav>
@@ -42,7 +42,7 @@
       </div>
     </nav>
     <!-- Here starts the content-->
-    <div class="hero text-center">
+    <div id="hero" class="hero text-center">
       <h1 class="hero-txt">Jaime Rios</h1>
       <h2>Creative Front-End Developer</h2>
       <h3 class="help-text">I turn black coffee and pizza into  engaging websites.</h3><a href="#hello" class="hero-link">
@@ -57,7 +57,7 @@
       <div data-animation="fadeInUp" data-timeout="600" class="large-9 columns revealOnScroll"> 
         <h2 class="text-left">Hello, I'm Jaime</h2>
         <p class="text-left">I'm a qualified<span> Front End Developer, with a good grasp of Back End. My work is focused in Human Centered Design. </span></p>
-        <div data-animation="fadeInUp" data-timeout="600" class="large-12 columns text-left revealOnScroll"><a id="contact-btn" data-open="contactmodal" class="button">Contact me</a><a id="resume" href="https://docs.google.com/document/d/1bKqVbohnl_aCA1EHmIoE0xgsX-679TPOSjP5Pi5irTo/edit?usp=sharing" class="button">Resume </a><a id="portfolio-btn" href="#works" class="button">Portfolio</a></div>
+        <div data-animation="fadeInUp" data-timeout="600" class="large-12 columns text-left revealOnScroll"><a id="contact-btn" data-open="contactmodal" class="button">Contact me</a><a id="resume" href="https://docs.google.com/document/d/1bKqVbohnl_aCA1EHmIoE0xgsX-679TPOSjP5Pi5irTo/edit?usp=sharing" class="button">Resume </a><a id="portfolio-btn" class="button">Portfolio</a></div>
       </div>
     </div>
     <!-- Here I start to WORK WORK WORK -->
@@ -138,7 +138,7 @@
     <script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/foundation/6.2.0/foundation.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/app.min.js"></script>
     <!-- This is the Google Analytics code-->
   </body>
 </html>
